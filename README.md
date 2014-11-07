@@ -4,7 +4,7 @@
 
 - git
 - node & npm
-- bower 
+- bower (sudo npm install -g bower)
 
 ## Steps
 
