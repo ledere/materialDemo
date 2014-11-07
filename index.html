@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
+    <link rel="stylesheet" href="bower_components/angular-material/themes/indigo-theme.css">
+    <link rel="stylesheet" href="site.css">
+</head>
+	<body class="bottomSheetdemoBasicUsage" md-theme="indigo" ng-app="YourApp">
+
+	<div ng-controller="YourController">
+
+
+
+	<md-toolbar>
+    <div class="md-toolbar-tools">
+      <span class="md-flex">My Cool App</span>
+    </div>
+  </md-toolbar>
+
+  <md-content class="md-padding" style="height: 600px;">
+
+  <md-card>
+
+  <p>
+    Lorem ipsum dolor sit amet, ne quod novum mei. Sea omnium invenire mediocrem at, in lobortis conclusionemque nam. Ne deleniti appetere reprimique pro, inani labitur disputationi te sed. At vix sale omnesque, id pro labitur reformidans accommodare, cum labores honestatis eu. Nec quem lucilius in, eam praesent reformidans no. Sed laudem aliquam ne.
+    </p>
+
+</md-card>
+<md-card>
+
+      <md-button class="md-raised">Button</md-button>
+      <md-button class="md-raised md-primary">Primary</md-button>
+      <md-button disabled class="md-raised md-primary">Disabled</md-button>
+      <md-button class="md-raised md-warn">Warn</md-button>
+
+ <md-checkbox ng-model="data.cb1" aria-label="Checkbox 1">
+    Checkbox 1: {{ data.cb1 }}
+  </md-checkbox>
+
+  <md-checkbox ng-model="data.cb2" aria-label="Checkbox 2" ng-true-value="'yup'" ng-false-value="'nope'">
+    Checkbox 2: {{ data.cb2 }}
+  </md-checkbox>
+
+  <md-checkbox disabled aria-label="Disabled checkbox">
+    Checkbox (Disabled)
+  </md-checkbox>
+
+  <md-checkbox disabled aria-label="Disabled checked checkbox" ng-model="data.cb4" ng-init="data.cb4=true">
+    Checkbox (Disabled, Checked)
+  </md-checkbox>
+
+  <md-checkbox noink aria-label="Checkbox No Ink">
+    Checkbox (No Ink)
+  </md-checkbox>
+
+</md-card>
+
+<md-card>
+
+<p style="padding-left: 20px;">
+    Bottom sheet can be dismissed with the service or a swipe down.
+  </p>
+  <div class="bottom-sheet-demo inset" layout="vertical" layout-sm="horizontal" layout-align="center">
+    <md-button class="md-primary" ng-click="showListBottomSheet($event)">
+      Show as List
+    </md-button>
+    <div style="width:50px;"></div>
+    <md-button class="md-primary" ng-click="showGridBottomSheet($event)">
+      Show as Grid
+    </md-button>
+  </div>
+
+  <br/>
+  <b layout="horizontal" layout-align="center center" layout-padding>
+    {{alert}}
+  </b>
+
+
+</md-card>
+
+
+    </md-content>
+
+
+	</div>
+
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/angular-aria/angular-aria.js"></script>
+	<script src="bower_components/angular-animate/angular-animate.js"></script>
+	<script src="bower_components/hammerjs/hammer.js"></script>
+	<script src="bower_components/angular-material/angular-material.js"></script>
+	<script src="app.js"></script>
+
+
+</body>
+</html>
