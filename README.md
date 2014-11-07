@@ -1,12 +1,12 @@
-= Installation
+# Installation
 
-== Rquirements
+## Requirements
 
 - git
 - node & npm
 - bower 
 
-== Steps
+## Steps
 
 Download the source via git
 $ git clone https://github.com/ledere/materialDemo.git
